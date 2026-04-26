@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>My Mobile App</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        /* Optional: Add a little custom styling */
+        .custom-footer { text-align: center; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+    <div data-role="page" id="home" data-theme="a">
+        
+        <div data-role="header" data-position="fixed">
+            <h1>Mobile Site</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Welcome!</h2>
+            <p>This is a simple mobile website built using the jQuery Mobile framework. It uses data-roles to style elements automatically.</p>
+            
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Navigation</li>
+                <li><a href="#about" data-transition="slide">About Us</a></li>
+                <li><a href="#contact" data-transition="slide">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer">
+            <h4>&copy; 2026 My App</h4>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="about" data-theme="b">
+        
+        <div data-role="header" data-add-back-btn="true" data-position="fixed">
+            <h1>About Us</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Who We Are</h2>
+            <p>We are learning how to build touch-optimized websites easily.</p>
+            <p>Notice how you navigated here without the browser actually reloading the page? That is the power of jQuery Mobile routing!</p>
+            
+            <a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" data-transition="slide" data-direction="reverse">Back to Home</a>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer">
+            <h4>&copy; 2026 My App</h4>
+        </div>
+    </div>
+
+
+    <div data-role="page" id="contact">
+        
+        <div data-role="header" data-add-back-btn="true" data-position="fixed">
+            <h1>Contact</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Get in Touch</h2>
+            
+            <form action="#" method="get">
+                <div class="ui-field-contain">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" value="">
+                </div>
+                
+                <div class="ui-field-contain">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" value="">
+                </div>
+                
+                <div class="ui-field-contain">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Type here..."></textarea>
+                </div>
+                
+                <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Send Message</button>
+            </form>
+        </div>
+
+        <div data-role="footer" data-position="fixed" class="custom-footer">
+            <h4>&copy; 2026 My App</h4>
+        </div>
+    </div>
+
+</body>
+</html>
